@@ -1,0 +1,15 @@
+{
+  "lockfileVersion": 1,
+  "dependencies": {
+    "@zodern/babel-plugin-meteor-relay": {
+      "version": "1.1.2",
+      "resolved": "https://registry.npmjs.org/@zodern/babel-plugin-meteor-relay/-/babel-plugin-meteor-relay-1.1.2.tgz",
+      "integrity": "sha512-UZ9RyKcirnVO9G12G/BBvy1GTIQ/SfANymuf+Jdgz6Qkcyo6wXSi3NT/897joLwgY0HqDakZIS2Xx8i/QBJv7w=="
+    },
+    "zod": {
+      "version": "3.20.2",
+      "resolved": "https://registry.npmjs.org/zod/-/zod-3.20.2.tgz",
+      "integrity": "sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ=="
+    }
+  }
+}
