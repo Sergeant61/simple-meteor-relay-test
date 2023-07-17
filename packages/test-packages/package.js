@@ -14,7 +14,7 @@ Package.onUse(function (api) {
   api.versionsFrom('2.9.0')
   api.addAssets('./.babelrc', 'server')
   api.use('typescript')
-  api.use('zodern:relay')
+  api.use('zodern:relay@1.1.1')
 
   api.mainModule('index.ts')
 })

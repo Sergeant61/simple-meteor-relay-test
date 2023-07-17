@@ -1,11 +1,21 @@
+import { createMethod } from "meteor/zodern:relay";
+import { z } from "zod";
 
-import { createMethod } from 'meteor/zodern:relay';
-import { z } from 'zod';
+const methodSchema = z.object({
+  slug: z.string(),
+  _id: z.string(),
+});
 
-export const add = createMethod({
-  name: 'add',
-  schema: z.number().array().length(2),
-  run([a, b]) {
-    return a + b;
-  },
+type TMethodType = z.infer<typeof methodSchema>;
+
+const RoleCheck = function (roles: string[]) {
+  return function pipelineStep(input) {
+    return input
+  }
+}
+
+export const checkClientEmailChannel = createMethod({
+  schema: methodSchema,
+}).pipeline(RoleCheck(["permissions.support.ticketSystems.update"]), async function ({ slug, _id }: TMethodType): Promise<void> {
+  this.unblock();
 });
